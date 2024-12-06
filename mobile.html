@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8? />
+  <title>Sobre Alexis</title>
+  <meta name="description" content="Alexis Parra Gonz&aacute;lez- Esta página web contiene mis intereses, particularmente en el campo de la programación.">
+  <meta name="author" content="Alexis Parra Gonz&aacute;lez" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="icons/icon-computer.svg" type="image/icon type">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <style type="text/css">
+  	
+
+  	#htext{
+  		font-size: 20px;
+  		top: 205px;
+  		padding-left: 110px;
+      width: 65%;
+  	}
+
+    #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    background-color: #0c0937;
+    }
+
+
+  	#paratext{
+  		font-size: 13px;
+  		padding-left: 110px;
+  		top: 250px;
+      width: 65%;
+  	}
+
+  	#mug{
+  		height: 155px;
+  		width: 155px;
+  		padding-left: 165px;
+  	}
+
+  	#h2text{
+  		font-size: 16px;
+  		top: 410px;
+      padding-left: 110px;	
+  	}
+
+  	ul{
+  		top: 450px;
+  		left: 15%;
+      padding-left: 90px;
+  		position: absolute;
+  	}
+
+  	li{
+  		font-size: 14px;
+ 
+  	}
+
+
+    #nav{
+  	top: 540px;
+  	position: absolute;
+  	left: 50%;
+	}
+
+
+  	#social{
+  	top: 595px;
+    position: absolute;
+    left: 31%;
+    padding-left: 6px;
+  	}
+
+  	.panel{
+  		left: 11%;
+      width: 100%;
+    }
+
+
+  </style>
+
+
+</head>
+
+<body onload="ref()">
+<script type="text/javascript"> 
+if(window.innerHeight < window.innerWidth){
+    alert("This webpage is intended to be viewed in potrait mode/on smartphone's only");
+  } 
+</script>
+
+<div id="particles-js"></div>
+  
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<Sdiv class="panel" style="display: block;">
+  
+
+<img src="img/mug.jpg" alt="Alex" id="mug"></img>
+
+<h1 id="htext">Hola Mundo, Yo soy Alexis </h1>
+<p id="paratext">Soy Licenciado en Administraci&oacute;n y Econom&iacute;a en Salud Publica que ama la tecnolog&iacute;a, la programaci&oacute;n y la administraci&oacute;n de redes. Creo en el uso de poderes tecnol&oacute;gicos para crear herramientas para potenciar y construir un futuro sostenible y eficiente. Para saber m&aacute;s, haga clic en los iconos de redes sociales a continuaci&oacute;n o escriba a <a style="background-color: white; opacity: 0.5; border-radius:3px; padding-left: 1px; padding-right: 1px;" href="mailto:alexiparra@gmail.com">alexiparra@gmail.com</a>  &#x1F607;</p>
+
+<div id="infocontainer">
+    
+<h2 id="h2text"><script type="text/javascript" src="js/listcontrol.js"></script></h2>
+  <ul id="list">
+  <li id="ele1"></li>
+  <li id="ele2"></li>
+  <li id="ele3"></li>
+  <li id="ele4"></li>
+  <li id="ele5"></li>
+
+</ul>
+</div>
+    
+
+<p align="center" id="nav">
+<a onclick="onClickLeft()"><img src="icons/arrow_left.png" id="floating-button1" alt="LeftClick" name="btnn"></a>
+<a onclick="onClickRight()"><img src="icons/arrow_right.png" id="floating-button1" alt="RightClick" name="btnn"></a>
+</p>    
+
+
+  <p align="center" id="social">
+    <a href="https://www.facebook.com/cubanitoalex" target="_blank"><img src="icons/facebook.png" alt="cubanitoalex Facebook" id="floating-button" name="btnn"></a> 
+    <a href="https://github.com/cubanitoalex" target="_blank"><img src="icons/github.png" alt="cubanitoalex Github"  id="floating-button"></a>
+    <a href="https://twitter.com/cubanito_alex" target="_blank"><img src="icons/twitter.png" alt="cubanito_alex Twitter"  id="floating-button"></a>
+    <a href="https://www.instagram.com/cubanitoalexx" target="_blank"><img src="icons/instagram.png" alt="cubanitoalexx Instagram"  id="floating-button"></a>
+      
+  </p>
+</div>
+</body>
+</html>
+

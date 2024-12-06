@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	 <meta http-equiv=“Content-Type” content=“text/html; charset=UTF-8” />
+  <title>Sobre Alexis</title>
+  <meta name="description" content="Alexis Parra González- Esta página web contiene mis intereses, particularmente en el campo de la programación.">
+  <meta name="author" content="Alexis Parra González" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="icons/icon-computer.svg" type="image/icon type">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="ref()">
+
+<div id="particles-js"></div>
+  
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<div class="panel" style="display: block;">
+  
+
+<img src="img/mug.jpg" alt="Profile" id="mug"></img>
+
+<h1 id="htext">Hola Mundo, Yo soy Alexis</h1>
+<p id="paratext">
+    Soy un apasionado Licenciado en Administración y Economía en Salud Pública, con una visión única que fusiona la gestión sanitaria con la innovación tecnológica. Mi experiencia abarca desde la optimización de sistemas de salud hasta el desarrollo de soluciones tecnológicas que transforman la atención médica.
+</p>
+
+<p id="paratext">
+    Como entusiasta de la tecnología, me especializo en programación y administración de redes, creando puentes entre el sector salud y las soluciones digitales modernas. Mi objetivo es revolucionar la gestión sanitaria mediante la implementación de tecnologías emergentes y prácticas innovadoras.
+</p>
+
+<p id="paratext">
+    Creo firmemente en el poder transformador de la tecnología para construir un futuro más sostenible y eficiente en el sector salud. Mi enfoque combina principios económicos sólidos con soluciones tecnológicas avanzadas para optimizar recursos y mejorar la calidad de atención.
+</p>
+
+<p id="paratext">
+    ¿Interesado en colaborar en proyectos que impacten positivamente en la salud pública a través de la tecnología? Contáctame a través de los iconos de redes sociales que encontrarás más abajo.
+</p>
+
+<div id="infocontainer">
+    
+<h2 id="h2text"><script type="text/javascript" src="js/listcontrol.js"></script></h2>
+  <ul id="list">
+  <li id="ele1"></li>
+  <li id="ele2"></li>
+  <li id="ele3"></li>
+  <li id="ele4"></li>
+  <li id="ele5"></li>
+
+</ul>
+</div>
+    
+
+<p align="center" id="nav">
+<a onclick="onClickLeft()"><img src="icons/arrow_left.png" id="floating-button1" alt="LeftClick" name="btnn"></a>
+<a onclick="onClickRight()"><img src="icons/arrow_right.png" id="floating-button1" alt="RightClick" name="btnn"></a>
+</p>    
+
+
+  <div class="social-links">
+    <a href="https://github.com/cubanitoalex" target="_blank" class="social-icon">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://twitter.com/cubanito_alex" target="_blank" class="social-icon">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.instagram.com/cubanitoalexx" target="_blank" class="social-icon">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://wa.me/5352469458" target="_blank" class="social-icon">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="mailto:alexiparra@gmail.com" class="social-icon">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+</div>
+
+<script>
+    // Deshabilitar click derecho
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    // Deshabilitar teclas de inspección y otras teclas de desarrollo
+    document.addEventListener('keydown', function(e) {
+      // Deshabilitar F12
+      if(e.keyCode == 123) {
+        e.preventDefault();
+      }
+      
+      // Deshabilitar Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+U
+      if(e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74 || e.keyCode === 85)) {
+        e.preventDefault();
+      }
+    });
+
+    // Deshabilitar la vista del código fuente
+    document.onkeypress = function (event) {
+      event = (event || window.event);
+      if (event.keyCode == 123) {
+        return false;
+      }
+    }
+  </script>
+
+<!-- Modal para la imagen -->
+<div id="imageModal" class="modal">
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+// Obtener elementos
+var modal = document.getElementById("imageModal");
+var img = document.getElementById("mug");
+var modalImg = document.getElementById("modalImg");
+
+// Cuando se hace clic en la imagen
+img.onclick = function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  document.body.style.overflow = 'hidden'; // Prevenir scroll
+}
+
+// Cerrar el modal al hacer clic en cualquier parte
+modal.onclick = function() {
+  modal.style.display = "none";
+  document.body.style.overflow = 'auto'; // Restaurar scroll
+}
+
+// Prevenir que pointer-events: none afecte el clic en la imagen
+img.style.pointerEvents = 'auto';
+</script>
+
+</body>
+</html>
